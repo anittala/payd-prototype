@@ -34,7 +34,7 @@ const GyroReadings = () => {
         <View style={styles.container}>
             <Text >Gyrofuckingscope</Text>
             <Text >
-            x: {Math.round(x)} y: {Math.round(y)} z: {Math.round(z)}
+                gx: {x.toFixed(3)} gy: {y.toFixed(3)} gz: {z.toFixed(3)}
             </Text>
             <View>
                 <TouchableOpacity onPress={subscription ? _unsubscribe : _subscribe} >

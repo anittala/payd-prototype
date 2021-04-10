@@ -32,7 +32,7 @@ const AccReadings = () => {
         <View style={styles.container}>
              <Text>Accelerometer: (in Gs where 1 G = 9.81 m s^-2)</Text>
              <Text>
-                     x: {Math.round(x)} y: {Math.round(y)} z: {Math.round(z)}
+                     ax: {x.toFixed(3)} ay: {y.toFixed(3)} az: {z.toFixed(3)}
              </Text>
             <View>
                 <TouchableOpacity onPress={subscription ? _unsubscribe : _subscribe} >
