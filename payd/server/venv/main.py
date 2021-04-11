@@ -16,11 +16,11 @@ CORS(app)
 
 @app.route('/', methods=["GET"])
 def hello_world():
-    return {'god': 'fuck you god'}
+    return {'hello': 'heey'}
 
 
 @app.route('/tripOver', methods=["GET"])
 def fetch_firebase():
     for doc in driveData_ref:
         print(f'{doc.to_dict()}')
-    return {'ehhhh': 'fuck you GOD'}
+    return {'status': 'done'}
