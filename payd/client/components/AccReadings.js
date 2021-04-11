@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 import { Accelerometer } from 'expo-sensors'
 
 const AccReadings = () => {
+    
     const [accData, setAccData] = useState({ x: 0, y: 0, z: 0 })
     const [subscription, setSubscription] = useState(null)
 
@@ -28,6 +29,7 @@ const AccReadings = () => {
     }, [])
     
   const { x, y, z } = accData
+  
     return (
         <View style={styles.container}>
              <Text>Accelerometer: (in Gs where 1 G = 9.81 m s^-2)</Text>

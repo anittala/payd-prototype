@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { StyleSheet, View, Button } from 'react-native'
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
+
 const StartJourney = ({ route, navigation }) => {
   
-  console.log(route?.params)
   const GOOGLE_MAPS_API_KEY = 'AIzaSyBJkM5hjGBEOebKjHflIXWh1Y2p6r1QEPw'
   const [coords, setCoords] = useState(route?.params? {latitude: route.params.latitude, longitude: route.params.longitude} : null)
   return (
