@@ -4,7 +4,7 @@ import { Alert } from "react-native"
 export async function addDriveData(driveData) {
   try {
     const db = firebase.firestore()
-    db.collection('driveData')
+    db.collection('dummyData')
     .add(driveData)
     .then(res => console.log('successfully posted to firebase', res))
     .catch((error) => console.log('wtf', error))

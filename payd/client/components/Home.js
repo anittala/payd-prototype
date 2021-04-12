@@ -9,7 +9,6 @@ const Home = ({ navigation }) => {
   // ================================
   //  CALL THIS FUNC WHEN TRIP OVER
   // ================================
-
   const callToFlask = () => {
     axios.get(`${url}/tripOver`)
     .then(res => console.log('res', res.data))

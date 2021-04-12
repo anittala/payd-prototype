@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import AccReadings from './components/AccReadings'
 import GyroReadings from './components/GyroReadings'
-import Map from './components/Map'
+import NativeMap from './components/NativeMap'
 import Home from './components/Home'
 import StartJourney from './components/StartJourney'
 import firebase from 'firebase'
@@ -31,7 +31,7 @@ export default function App() {
          <Stack.Navigator  initialRouteName="Home">
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Start" component={StartJourney} />
-            <Stack.Screen name="Map" component={Map} />
+            <Stack.Screen name="Map" component={NativeMap} />
             <Stack.Screen name="Gyro" component={GyroReadings} />
             <Stack.Screen name="Acc" component={AccReadings} />
          </Stack.Navigator>
